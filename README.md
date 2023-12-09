@@ -1,26 +1,23 @@
+![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-%% Introduction
-You have joined Gnod as a Data Analyst, tasked with enhancing their music recommendations feature. Gnod, a platform offering collaborative filtering-based recommendations for music, art, literature, and products, seeks to improve its music recommender at www.gnoosic.com. Users input three preferred bands, and the system recommends similar bands based on collaborative filtering algorithms.
+# Lab | Unsupervised learning intro (GNOD - part 4)
 
-Gnod, a growing company, is exploring additional revenue streams, including potential partnerships with music apps. Your role is crucial in expanding and refining their recommendation capabilities.
-
-%%Challenge
-Your initial task, assigned by Jane (CTO of Gnod), involves researching and exploring new data sources for songs. The objective is to enhance the music recommendation system by incorporating song recommendations based on acoustic similarity and global popularity.
-
-%%Task Overview
-
-Explore the internet for relevant data sources on popular songs. You can use APIs or web scraping to gather information. While the long-term goal is to collect data from millions of songs, start with a manageable subset to assess feature usefulness.
+#### Instructions 
 
 
-Once the data is collected, create clusters of songs with similar characteristics. The goal is to prioritize recommendations from the same cluster when a user inputs a song from a specific group.
+It's the moment to perform clustering on the songs you collected. Remember that the ultimate goal of this little project is to improve the recommendations of songs in the hope that the user will enjoy the new song.. Clustering the songs will allow the recommendation system to limit the scope of the recommendations to only songs that belong to the same cluster - songs with similar audio features.
+
+The activities you did with the `Spotify` API and the PopVortex web scraping will allow you to create a pipeline such that when the user enters a song, you:
+
+1. Check whether or not the input song is in the PopVortex Hot 100.
+2. Recommend another Hot 100 song
+3. If it is NOT in the hot 100, then collect the audio features from the `Spotify` API for the input song.
+4. You want to send the `Spotify` audio features of the submitted song to the clustering model, which should return a cluster number.  
+5. Then you recommend a song from the same cluster number.
+
+Your model will be even more accurate the more songs you use to create your clusters in your model, so you want to have as many songs as possible to create the clustering model. You can find some larger datasets on Kaggle containing more songs with audio features that have already been scraped and saved as a .csv file. You can add these to your own scraped data.   Here are some links to try:
+- [Datasets 1960 - 2019](https://www.kaggle.com/datasets/theoverman/the-spotify-hit-predictor-dataset?select=README.txt)
+- [Datasets 1921 - 2020](https://www.kaggle.com/datasets/yamaerenay/spotify-dataset-19212020-600k-tracks?select=tracks.csv)
+- [General Song Datasets](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset)
 
 
-On Friday, present your findings to Jane and Marek, the CEO. Emphasize the potential of the song recommender and be persuasive in your approach. Jane has a personal interest in this initiative, making it a critical aspect of your role.
-
-
-Be open-minded and agile in your process. Define products and features as you go, exploring available tools and data. Provide your vision for the product and suggest the next steps based on your analysis.
-
-
-Wish you luck and strength in your first week at Gnod. Your contribution to the song recommender project is pivotal, and your insights will play a key role in shaping Gnod's future recommendations.
-
-Jane, CTO of Gnod
