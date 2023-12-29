@@ -11,7 +11,8 @@ That’s precisely where you come. They have hired you as a Data Analyst, and th
 
 Jane, CTO of Gnod, has sent you an email assigning you with your first task.
 
-####The Challenge
+#### The Challenge
+
 This is an e-mail Jane - CTO of Gnod - sent over your inbox in the first weeks working there.
 
 Copy
