@@ -1,6 +1,6 @@
 ![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)
 
-#### Introduction
+# Introduction
 You have been hired as a Data Analyst for Gnod.
 
 Gnod is a site that provides recommendations for music, art, literature and products based on collaborative filtering algorithms. Their flagship product is the music recommender, which you can try at www.gnoosic.com. The site asks users to input 3 bands they like, and computes similarity scores with the rest of the users. Then, they recommend to the user bands that users with similar tastes have picked.
@@ -11,7 +11,7 @@ That’s precisely where you come. They have hired you as a Data Analyst, and th
 
 Jane, CTO of Gnod, has sent you an email assigning you with your first task.
 
-The Challenge
+####The Challenge
 This is an e-mail Jane - CTO of Gnod - sent over your inbox in the first weeks working there.
 
 Copy
@@ -35,7 +35,7 @@ Be open minded about this process: we are agile, and that means that we define o
 Lots of luck and strength for this first week with us!
  
 Jane
-Explain this code
+
 
 Have fun and enjoy the ride!
 
